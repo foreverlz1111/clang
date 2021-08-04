@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/sakurinn/project/clang/Chapter1/main.cpp
+/home/sakurinn/project/clang/Chapter2/main.cpp
 stdio.h
--
-math.h
-/home/sakurinn/project/clang/Chapter1/math.h
+/home/sakurinn/project/clang/Chapter2/stdio.h
 
