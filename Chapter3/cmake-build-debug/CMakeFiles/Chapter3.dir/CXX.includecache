@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sakurinn/project/clang/Chapter3/main.cpp
+stdio.h
+/home/sakurinn/project/clang/Chapter3/stdio.h
+math.h
+/home/sakurinn/project/clang/Chapter3/math.h
+

@@ -1,5 +1,7 @@
 #include "stdio.h"
-
+/**************************************************************
+ **  Git HTTPS:https://github.com/foreverlz1111/clang.git    **
+ **************************************************************/
 #define PI 3.14//实体常量定义
 int main() {
     /*2-1*/
@@ -96,5 +98,15 @@ int main() {
     number28 = number26&0xff;
     number27 = (number26 & 0xff00) >> 8;
     printf("alphabet5 = %d\t alphabet6 = %d\n number27 = %d\t number28 = %d\n",alphabet5,alphabet6,number27,number28);
+
+    /*习题：四、1*/
+    int hour,minute;
+    printf("请分别输入小时数和分钟数：\n");
+    scanf("%d%d",&hour,&minute);
+    int tmp_minutes;
+    tmp_minutes = hour*60 + minute;
+    printf("[%d小时%d分]共经历了%d分钟",hour,minute,tmp_minutes);
+
+
     return 0;
 }
