@@ -7,6 +7,12 @@
 #IncludeRegexTransform: 
 
 /home/sakurinn/project/clang/Chapter4/main.cpp
+cstring
+-
 stdio.h
 /home/sakurinn/project/clang/Chapter4/stdio.h
+string
+/home/sakurinn/project/clang/Chapter4/string
+math.h
+/home/sakurinn/project/clang/Chapter4/math.h
 
