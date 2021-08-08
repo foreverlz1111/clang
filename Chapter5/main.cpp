@@ -95,93 +95,132 @@ double f5_11(double x,int num){
     else
         return (2*x*f5_11(x,num-1)-f5_11(x,num-2));
 }
+int yanghui1(int n){
+    int a=1,i=1;
+    while(i<=n){
+        a*=i;
+        i++;
+    }
+    return a;
+}
+
+int yanghui2(int a,int b){
+    return yanghui1(a)/(yanghui1(b)*yanghui1(a-b));
+}
+
+
+double p132_9_1(int i){
+    double p = 1;
+    if (i == 1 || i == 0)
+        return 1;
+    else
+        p = p132_9_1(i-1)*i;
+    return p;
+}
+
 int main() {
     /*5-1*/
-//    float number1,number2;
-//    printf("请输入数字:");
-//    scanf("%f",&number1);
-//    number2 = f5_1(number1);
-//    printf("number2:%f\n",number2);
+    float number1,number2;
+    printf("请输入数字:");
+    scanf("%f",&number1);
+    number2 = f5_1(number1);
+    printf("number2:%f\n",number2);
 
     /*5-2*/
-//    double number3 = 564.5341;
-//    printf(" sqrt(number3) = %lf\n",sqrt(number3));
+    double number3 = 564.5341;
+    printf(" sqrt(number3) = %lf\n",sqrt(number3));
 
     /*5-3*/
-//    int number4,number5,number6;
-//    printf("请输入number4和number5：");
-//    scanf("%d%d",&number4,&number5);
-//    number6 = f5_3(number4,number5);
-//    printf("number6:%d\n",number6);
+    int number4,number5,number6;
+    printf("请输入number4和number5：");
+    scanf("%d%d",&number4,&number5);
+    number6 = f5_3(number4,number5);
+    printf("number6:%d\n",number6);
 
     /*5-4*/
-//    int number7 = 2,number8 = 3;
-//    printf("number7 = %d,number8 = %d\n",number7,number8);
-//    f5_4(number7,number8);
-//    printf("number7 = %d,number8 = %d\n",number7,number8);
+    int number7 = 2,number8 = 3;
+    printf("number7 = %d,number8 = %d\n",number7,number8);
+    f5_4(number7,number8);
+    printf("number7 = %d,number8 = %d\n",number7,number8);
 
     /*5-5*/
-//    int number9;
-//    printf("请输入number9：");
-//    scanf("%d",&number9);
-//    f5_5(number9);
-//    printf("number9 = %d",number9);
+    int number9;
+    printf("请输入number9：");
+    scanf("%d",&number9);
+    f5_5(number9);
+    printf("number9 = %d",number9);
 
     /*5-6*/
-//    long number10;
-//    for (int i = 2; i <= 3 ; i++) {
-//        number10 = number10 + f_5_6_1(i);
-//    }
-//    printf("\nnumber10 = %ld\n",number10);
+    long number10;
+    for (int i = 2; i <= 3 ; i++) {
+        number10 = number10 + f_5_6_1(i);
+    }
+    printf("\nnumber10 = %ld\n",number10);
 
     /*5-7*/
-//    int number11;
-//    long number12;
-//    printf("请输入number11:");
-//    scanf("%d",&number11);
-//    number12 = f5_7(number11);
-//    printf("number11(%d) **  = number12(%ld)  ",number11,number12);
+    int number11;
+    long number12;
+    printf("请输入number11:");
+    scanf("%d",&number11);
+    number12 = f5_7(number11);
+    printf("number11(%d) **  = number12(%ld)  ",number11,number12);
 
     /*5-8*/
-//    int array1[]={23,54,24,6,12,89,46,47,88,76};
-//    f5_8(array1,10);
-//    for (int i = 0; i < 10; i++) {
-//        printf("array[%d] = %d\t",i,array1[i]);
-//    }
+    int array1[]={23,54,24,6,12,89,46,47,88,76};
+    f5_8(array1,10);
+    for (int i = 0; i < 10; i++) {
+        printf("array[%d] = %d\t",i,array1[i]);
+    }
 
     /*5-9*/
-//    int number13,number14;
-//    int array[MAXNUM];
-//    number13 = 0;
-//    number14 = 54;
-//    while (number13 < MAXNUM && number14>=0&&number14<=100){
-//        array[number13++] = number14;
-//        scanf("%d",&number14);
-//    }
-//    if(number13>0)
-//        printf("最大：%d\n", f5_9(array,number13));
-//    else
-//        printf("无最大");
+    int number13,number14;
+    int array[MAXNUM];
+    number13 = 0;
+    number14 = 54;
+    while (number13 < MAXNUM && number14>=0&&number14<=100){
+        array[number13++] = number14;
+        scanf("%d",&number14);
+    }
+    if(number13>0)
+        printf("最大：%d\n", f5_9(array,number13));
+    else
+        printf("无最大");
 
     /*5-10*/
-//    int number14;
-//    printf("输入number14：");
-//    scanf("%d",&number14);
-//    while (number14 > 0){
-//        if (f5_10(number14))
-//            printf("f5_10() :%d\n",number14);
-//        scanf("%d",&number14);
-//    }
+    int number15;
+    printf("输入number15：");
+    scanf("%d",&number15);
+    while (number15 > 0){
+        if (f5_10(number15))
+            printf("f5_10() :%d\n",number15);
+        scanf("%d",&number15);
+    }
 
     /*5-11*/
-    double number15;
-    printf("number15: ");
-    scanf("%lf",&number15);
+    double number16;
+    printf("number16: ");
+    scanf("%lf",&number16);
     for (int i = 0; i < 10; i++) {
-        printf("%lf\t", f5_11(number15,i));
+        printf("%lf\t", f5_11(number16,i));
     }
     printf("\n");
 
+    /*习题三、3 杨辉三角形*/
+    for (int i = 1; i < 20; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("%d\t",yanghui2(i-1,j-1));
+        }
+        printf("\n");
+    }
+
+    /*习题三、9*/
+    int number17 = 3,number18 = 1 ; //x,flag
+    double number19 = 0;
+    for (int i = 1; i < 88; i+=2) {
+        number19 += pow(number17,i)/p132_9_1(i)*number18;
+        number18 = -number18;
+    }
+    printf("%lf",number19);
 
     return 0;
 }

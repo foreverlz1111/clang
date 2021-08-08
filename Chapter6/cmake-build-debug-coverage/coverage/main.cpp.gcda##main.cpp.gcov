@@ -1,0 +1,171 @@
+        -:    0:Source:/home/sakurinn/project/clang/Chapter6/main.cpp
+        -:    0:Graph:/home/sakurinn/project/clang/Chapter6/cmake-build-debug-coverage/CMakeFiles/Chapter6.dir/main.cpp.gcno
+        -:    0:Data:/home/sakurinn/project/clang/Chapter6/cmake-build-debug-coverage/CMakeFiles/Chapter6.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        -:    3:/**************************************************************
+        -:    4: **  Git HTTPS:https://github.com/foreverlz1111/clang.git    **
+        -:    5: **************************************************************/
+        -:    6:
+        -:    7:int number1 = 3,number2 = 5;
+        -:    8:
+function _Z4f6_2ii called 1 returned 100% blocks executed 80%
+        1:    9:int f6_2(int a,int b){
+        -:   10:    int c;
+       1*:   11:    c=a>b?a:b;
+        1:   11-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   11-block  1
+    %%%%%:   11-block  2
+        1:   12:    return c;
+        1:   12-block  0
+        -:   13:}
+function _Z4f6_4i called 2 returned 100% blocks executed 100%
+        2:   14:int f6_4(int a){
+        2:   15:    int b = 0;
+        -:   16:    static int c = 3;
+        2:   17:    a = c++,b++;
+        2:   18:    return a;
+        2:   18-block  0
+        -:   19:}
+function _Z4f6_5ii called 1 returned 100% blocks executed 80%
+        1:   20:int f6_5(int x,int y){
+        -:   21:    int z;
+       1*:   22:    z=x>y?x:y;
+        1:   22-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   22-block  1
+    %%%%%:   22-block  2
+        1:   23:    return z;
+        1:   23-block  0
+        -:   24:}
+function _Z4p6_7ii called 1 returned 100% blocks executed 80%
+        1:   25:int p6_7(int x,int y){
+        -:   26:    int z;
+       1*:   27:    z = x>y?x:y;
+        1:   27-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   27-block  1
+        1:   27-block  2
+        1:   28:    return z;
+        1:   28-block  0
+        -:   29:}
+function _Z4f6_8i called 3 returned 100% blocks executed 100%
+        3:   30:int f6_8(int a){
+        3:   31:     int b = 0;//[auto] C++ 11标准后不再使用
+        -:   32:    static int c = 3;
+        3:   33:    b = b + 1;
+        3:   34:    c = c + 1;
+        3:   35:    return a+b+c;
+        3:   35-block  0
+        -:   36:}
+function _Z16f_multiplicationi called 222 returned 100% blocks executed 100%
+      222:   37:long f_multiplication(int flag){
+        -:   38:    static int a = 1;
+      222:   39:    if (flag == 1)
+      222:   39-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 220
+        2:   40:        a = 0;
+        2:   40-block  0
+      222:   41:    return a++;
+      222:   41-block  0
+        -:   42:}
+function main called 1 returned 100% blocks executed 100%
+        1:   43:int main() {
+        -:   44:    /*6-2*/
+        1:   45:    int number1 =9;
+        1:   46:    printf("f6_2 :%d\n", f6_2(number1,number2));
+        1:   46-block  0
+call    0 returned 1
+call    1 returned 1
+        -:   47:
+        -:   48:    /*6-4*/
+        1:   49:    int number4 =2,number5;
+        3:   50:    for (int i = 0; i < 2; ++i) {
+        3:   50-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 1
+        2:   51:        number5 = f6_4(number4++);
+        2:   51-block  0
+call    0 returned 2
+        -:   52:    }
+        1:   53:    printf("number5 = %d\n",number5);
+        1:   53-block  0
+call    0 returned 1
+        -:   54:
+        -:   55:    /*6-5*/
+        -:   56:    extern int number6,number7;
+        1:   57:    printf("f6_5() :%d\n", f6_5(number6,number7));
+call    0 returned 1
+call    1 returned 1
+        -:   58:
+        -:   59:    /*6-7*/
+        -:   60:    extern int number8 ,number9;
+        1:   61:    printf("f6_7(): = %d", p6_7(number8,number9));
+call    0 returned 1
+call    1 returned 1
+        -:   62:
+        -:   63:    /*6-8*/
+        1:   64:    int number10 = 2;
+        4:   65:    for (int i = 0; i < 3; i++) {
+        4:   65-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 1
+        3:   66:        printf("f6_8() :%d \t", f6_8(number10));
+        3:   66-block  0
+call    0 returned 3
+call    1 returned 3
+        -:   67:    }
+        -:   68:
+        -:   69:    /*习题三*/
+        1:   70:    long number11=0;
+       41:   71:    for (int i = 1; i <= 40; i++) {
+        1:   71-block  0
+       41:   71-block  1
+branch  0 taken 40 (fallthrough)
+branch  1 taken 1
+       40:   72:        number11 += f_multiplication(0);
+       40:   72-block  0
+call    0 returned 40
+        -:   73:    }
+        1:   74:    printf("40!= %ld \n",number11);
+        1:   74-block  0
+call    0 returned 1
+        1:   75:    f_multiplication(1);
+call    0 returned 1
+        1:   76:    number11=0;
+       81:   77:    for (int i = 1; i <= 80; i++) {
+       81:   77-block  0
+branch  0 taken 80 (fallthrough)
+branch  1 taken 1
+       80:   78:        number11 += f_multiplication(0);
+       80:   78-block  0
+call    0 returned 80
+        -:   79:    }
+        1:   80:    printf("80!= %ld \n",number11);
+        1:   80-block  0
+call    0 returned 1
+        1:   81:    f_multiplication(1);
+call    0 returned 1
+        1:   82:    number11=0;
+      101:   83:    for (int i = 1; i <= 100; i++) {
+      101:   83-block  0
+branch  0 taken 100 (fallthrough)
+branch  1 taken 1
+      100:   84:        number11 += f_multiplication(0);
+      100:   84-block  0
+call    0 returned 100
+        -:   85:    }
+        1:   86:    printf("100!= %ld \n",number11);
+        1:   86-block  0
+call    0 returned 1
+        -:   87:
+        1:   88:    return 0;
+        -:   89:}
+        -:   90:int number6 = 23,number7 = 9;
+        -:   91:int number8 = 3,number9 = 5;
