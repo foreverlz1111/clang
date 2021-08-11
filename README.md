@@ -67,11 +67,11 @@
 - **Chapter5:**
   - 库函数：
 
-   >#include "iostream" //用于C++
+    >#include "iostream" //用于C++
 
-   >#include <stdio.h> //用于C语言
+    >#include <stdio.h> //用于C语言
 
-   >#include "math.h" // 可以调用sqrt()、pow()等数学函数
+    >#include "math.h" // 可以调用sqrt()、pow()等数学函数
 
   - 形参：在函数中定义和使用的参数，离开该函数则无效，且调用时分配内存，结束时被清除
   - 实参：常量、变量、表达式、函数等，无论何种类型都应该有具体的值，以便传送至函数行参
@@ -116,29 +116,52 @@
 
     > p = a;
    - 指针可以指向函数：
-    > int f(int a){...}
+     > int f(int a){...}
 
-    > int (*p)(int);
+     > int (*p)(int);
 
-    > p = f;//将函数f指向p指针
+     > p = f;//将函数f指向p指针
 
    - 指针可以指向函数：
-    > int a[2][3];
+     > int a[2][3];
+     > int (*p3) = a;
+     > *(*(p+i)+j) = a[i][j]
 
-    > int (*p3) = a;
+   - 使用函数内指针返回值：
+     > int *f(){...}
+     > printf("%d",f());
 
-    > *(*(p+i)+j) = a[i][j]
-
-   -使用函数内指针返回值：
-    > int *f(){...}
-
-    > printf("%d",f());
-
-   -main()函数也可以有形式参数
-    > int main(int argc,char *argv[]){...}
+   - main()函数也可以有形式参数
+     > int main(int argc,char *argv[]){...}
 - **Chapter9:**
    - 结构体定义：一种数据类型——由一个或多个成员组成（成员数据类型可以不同）
    - 一个结构体内的成员可以是另一个结构体,成员可以被赋予初值
    - 不能通过结构体变量名直接输出整个结构体，也不能将一组数据直接赋予结构体变量，而是使用scanf()
    - 共用体union{变量}，共用体内可以根据需要在多个变量中选择一个进行定义，起到内存共用的效果
    - 枚举enum{元素}，使用数字进行选择罗列出的元素
+- **Chapter10:**
+   - 逻辑结构文件：记录文件、流式文件
+   - 储存介质文件：普通文件、存储介质文件、设备文件
+   - 组织文件：文本文件、二进制文件
+   - 文件读写操作函数：
+     >fputc('c',file);//将字符'c'存入file文件内
+
+     >(char) a = fgetc(file);//从file中读取一个字符放入字符变量a中
+
+     >fputs("hello world",file);//将字符串存入file文件内
+
+     >(char a[20]) fgets(a,6,file);//从file文件内读取6个字符放入字符数组中
+
+     >fprintf(file,"%d%2.2f",&a,&b);//自定义格式变量存入file文件内
+
+     >fscanf（file,"%d%2.2f",&a,&b）;//从file文件内读取并放入自定义格式变量中
+
+     >(char a[20]) fwrite(a[1],4,1,file);//从file文件内读取4字节写入1次到数组a中
+
+     >(char a[20]) fread(a[1],4,3,file);//从数组a中读取4字节写入3次存入file文件内
+
+     >rewind(file);//将文件指针移至开头
+
+     >fseek(file,6L,0);fseek(file,6L,1);fseek(file,-6L,2);//分别表示从头开始移动6字节、从当前位置移动6字节、从尾开始移动-6个字节
+
+     >ftell(file);//返回file文件当前文件指针位置
