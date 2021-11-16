@@ -1,3 +1,0 @@
-/home/sakurinn/project/clang/Chapter7/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/sakurinn/project/clang/Chapter7/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/sakurinn/project/clang/Chapter7/cmake-build-debug/CMakeFiles/Chapter7.dir
