@@ -207,7 +207,7 @@ int main() {
     int array5[]={1,2,3,4,5,6,7,8,9,0},*point_array5;
     point_array5 = array5;
     f8_10(point_array5,10);
-    printf("point_array5最大值、最小值为：%d,%d",number11,number12);
+    printf("point_array5最大值、最小值为：%d,%d\n",number11,number12);
 
     /*8-11*/
     int array6[2][3]={1,2,3,

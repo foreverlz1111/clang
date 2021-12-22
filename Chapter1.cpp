@@ -10,8 +10,8 @@
 /*C99标准所有C程序从main()开始。*/
 int main() {
     /*1-1*/
-    printf("好久不见！\n");
-    printf("近来可好？\n");
+    printf("hello \n");
+    printf("world!\n");
 
     /*1-2*/
     int number1 ,number2,number_sum;
@@ -30,9 +30,10 @@ int main() {
     printf("(%d+%d)/2.0=%f\n",number3,number4,number_average);
 
     /*习题：三、4（圆柱体积）*/
-    float r,h,v;
+    float v;
+    int r,h;
     printf("分别输入半径，高度。（单精度）");
-    scanf("%f,%f",&r,&h);
+    scanf("%d,%d",&r,&h);
     v = 3.14 * pow(r,2) * h;
     printf("圆柱的体积为：%f\n",v);
 
