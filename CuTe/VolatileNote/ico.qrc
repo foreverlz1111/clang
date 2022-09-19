@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ico/reset.ico</file>
+        <file>ico/close.ico</file>
+        <file>ico/menu.ico</file>
+        <file>ico/dragable.ico</file>
+        <file>ico/icon.ico</file>
+    </qresource>
+</RCC>
