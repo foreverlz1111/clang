@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/test59.dir/main.cpp.o  -o test59.exe -Wl,--out-implib,libtest59.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

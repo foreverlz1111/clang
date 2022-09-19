@@ -1,0 +1,3 @@
+/cygdrive/d/VS test/test59/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/d/VS test/test59/cmake-build-debug/CMakeFiles/test59.dir
+/cygdrive/d/VS test/test59/cmake-build-debug/CMakeFiles/rebuild_cache.dir
