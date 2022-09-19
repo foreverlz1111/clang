@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/project/c++/test13/main.cpp
+iostream
+-
+stdio.h
+-
+memory.h
+-
+string.h
+-
+stdlib.h
+-
+

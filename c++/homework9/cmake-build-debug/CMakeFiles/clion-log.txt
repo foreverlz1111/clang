@@ -1,0 +1,8 @@
+D:\cygwin\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/c++/homework9
+-- Configuring done
+CMake Error at CMakeLists.txt:6 (add_executable):
+  CXX_STANDARD is set to invalid value '17'
+
+
+-- Generating done
+-- Build files have been written to: /cygdrive/d/c++/homework9/cmake-build-debug

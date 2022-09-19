@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/test12.dir/main.cpp.o -o test12 

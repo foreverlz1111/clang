@@ -1,0 +1,3 @@
+/cygdrive/d/project/c++/test11/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/d/project/c++/test11/cmake-build-debug/CMakeFiles/test11.dir
+/cygdrive/d/project/c++/test11/cmake-build-debug/CMakeFiles/rebuild_cache.dir

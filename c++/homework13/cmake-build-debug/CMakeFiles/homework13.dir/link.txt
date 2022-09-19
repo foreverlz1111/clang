@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/homework13.dir/main.cpp.o  -o homework13.exe -Wl,--out-implib,libhomework13.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

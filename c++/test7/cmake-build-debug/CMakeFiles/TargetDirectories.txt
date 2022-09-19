@@ -1,0 +1,3 @@
+/cygdrive/d/c++/test7/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/d/c++/test7/cmake-build-debug/CMakeFiles/test7.dir
+/cygdrive/d/c++/test7/cmake-build-debug/CMakeFiles/rebuild_cache.dir

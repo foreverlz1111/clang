@@ -1,0 +1,8 @@
+D:\cygwin\bin\cmake.exe -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /cygdrive/d/c++/test
+CMake Error at CMakeLists.txt:6 (add_executable):
+  The target name "test" is reserved or not valid for certain CMake features,
+  such as generator expressions, and may result in undefined behavior.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/cygdrive/d/c++/test/cmake-build-default-cygwin/CMakeFiles/CMakeOutput.log".
