@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/ajax-loader.gif</file>
+        <file>img/class.ico</file>
+        <file>img/back.ico</file>
+        <file>img/exam.ico</file>
+        <file>img/classroom.ico</file>
+        <file>img/recheck.ico</file>
+        <file>img/grade.ico</file>
+        <file>img/refresh.ico</file>
+        <file>img/return.ico</file>
+        <file>img/save_78935.ico</file>
+        <file>img/seo.ico</file>
+        <file>img/editdocument.ico</file>
+        <file>img/22.ico</file>
+        <file>img/222.ico</file>
+        <file>img/wondicon.ico</file>
+        <file>img/ff2.ico</file>
+        <file>img/lock.ico</file>
+        <file>img/unlock.ico</file>
+        <file>img/down.ico</file>
+    </qresource>
+</RCC>
